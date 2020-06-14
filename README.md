@@ -33,5 +33,9 @@ How to set-Up :
 You can show suppport or provide me with your considerate opinions at my Email
 * akmunywoki@gmail.com
 
+#### License
+####[*MIT License*] (LICENSE)
+
+
 
 
