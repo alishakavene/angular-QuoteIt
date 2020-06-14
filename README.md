@@ -17,6 +17,9 @@ To View the App follow through the live link deployed above the page or at the R
 How to set-Up :
 * **step 1:** Clone my respository or Download a Zip file of the code
 * **step 2:**  Open Terminal , Download dependencies in the package.json using **npm Install **
+* **step 3: ** Run ** ng serve ** for dev server . Navigate to the link provided **localhost 4200** The app automatically reloads if you input any code to it.
+
+### Known Bugs
 
 
 
