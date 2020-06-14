@@ -8,13 +8,16 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { quoteComponent } from './quote/quote.component';
 
 
+
+
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: quoteComponent },
-    ])
+    ]),
+    
   ],
   declarations: [
     AppComponent,
