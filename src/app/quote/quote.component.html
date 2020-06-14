@@ -1,0 +1,42 @@
+<h2></h2>
+<div *ngFor="let quote of quotes">
+  
+  <h4> 
+    <a [title]="quote.name + 'quotes'">
+    {{quote.name}}
+    </a>
+    </h4> 
+    <p *ngIf="quote.description">
+      Quote : {{quote.description}}
+      </p> 
+      <p>
+        <a [title]="'Like'">
+      <button (click)="likeClick()"class="like-button"[ngClass]="{'like':liked}">
+        <span class="material-icons"> mood <span class="likes-counter">{{initialCount}}</span> </span>
+      </button>
+      </a>
+        <a [title]="'Dislike'">
+          <button (click)="dislikeClick()"class="dislike-button"[ngClass]="{'dislike':disliked}">
+            <span class="material-icons">mood_bad <span class="dislikes-counter">{{initialCounts}}</span> </span>
+          </button>
+        </a>
+        <a [title]="'Delete'">
+          <button>
+            <span class="material-icons">delete_outline</span>
+          </button>
+        </a>
+        <a [title]="'share'">
+          <button (click)="share()">
+            <span class="material-icons">share</span>
+          </button>
+        </a>
+        </p>
+        <p>Posted on {{today|date}}  {{today|date : 'h:mm a'}}</p>
+        
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
