@@ -21,5 +21,17 @@ How to set-Up :
 
 ### Known Bugs
 
+### Technologies Used
+
+* Angular version 9.1.3
+* Html/css
+* JavaScript
+* Angular Material
+* Angular Material Icons
+
+## Support and Details
+You can show suppport or provide me with your considerate opinions at my Email
+* akmunywoki@gmail.com
+
 
 
