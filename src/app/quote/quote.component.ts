@@ -10,6 +10,7 @@ import { quotes } from '../quotes';
 
 })
 export class quoteComponent {
+  
   quotes = quotes;
   today : number = Date.now();
 
