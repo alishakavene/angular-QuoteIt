@@ -2,7 +2,7 @@
 
 * {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #616161;
+  color: black;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,6 +10,9 @@
 
 body {
   margin: 0;
+  background-image: url(https://www.pxwall.com/wp-content/uploads/2018/04/Download-Purple-Sunset-HD-Wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -34,16 +37,15 @@ h2 {
 h1, h2 {
   font-weight: lighter;
 }
-
 p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* Hyperlink */
 
 a {
   cursor: pointer;
-  color:purple;
+  color:palevioletred;
   text-decoration: none;
 }
 
@@ -77,8 +79,8 @@ label {
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color: white;
-  color: purple;
+  background-color:transparent;
+  color: palevioletred;
   border: none;
 }
 
@@ -115,18 +117,34 @@ app-top-bar {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 2px, 2px, 2px white;
 }
 
 app-top-bar h1 {
-  color: white;
+  color:palevioletred;
   margin: 0;
 }
 .submit{
-  background-color: purple;
+  background-color: palevioletred;
   color: white;
 }
 
-
+.quote-card{
+  background-color: rgb(235, 227, 227);
+  width: 40em;
+  padding: 20px;
+  margin: 20px;
+}
+.form-container{
+ padding-left: 450px;
+  margin-left: 40px;
+  margin: 32px;
+  color: palevioletred;
+  width: 35em;
+}
+.form-control{
+  width: 20em;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
