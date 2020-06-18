@@ -18,14 +18,14 @@ export class quoteComponent {
   share() {
     window.alert('The quote has been shared!');
   }
-  public initialCount = 10;
+  public initialCount = 0;
   public liked = false;
 
   likeClick(){
     this.liked=!this.liked;
     this.initialCount+=(this.liked ? 1:-1);
   }
-  public initialCounts = 5;
+  public initialCounts = 0;
   public disliked =false;
 
   dislikeClick(){
