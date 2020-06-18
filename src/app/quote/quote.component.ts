@@ -32,7 +32,9 @@ export class quoteComponent {
     this.disliked=!this.disliked;
     this.initialCounts+=(this.disliked ? 1:-1)
   }
-  
+  quoteDelete(complete:boolean){
+this.isComplete.emit(complete)
+  }
 }
 
 
