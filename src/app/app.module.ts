@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { quoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-
+import { HighLightDirective } from './highlight.directive';
+import { UnderlineDirective } from './underline.directive';
+import { SampleDirective } from './sample.directive';
 
 
 
@@ -27,7 +29,10 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     TopBarComponent,
     quoteComponent,
     QuoteFormComponent,
-   
+    HighLightDirective,
+    UnderlineDirective,
+    SampleDirective
+    
     
   ],
   bootstrap: [ AppComponent ]

@@ -7,11 +7,11 @@
   <blockquote class="quote-card ">
   
   <h4> 
-    <a [title]="quote.name + 'quotes'">
+    <a [title]="quote.name + 'quotes'" appHighlight>
     {{quote.name}}
     </a>
     </h4> 
-    <p *ngIf="quote.description">
+    <p *ngIf="quote.description" appHighlight>
       Quote : {{quote.description}}
       </p> 
       <p>
