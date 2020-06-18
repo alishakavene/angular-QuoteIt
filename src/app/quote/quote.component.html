@@ -1,5 +1,9 @@
 <h2></h2>
-<div *ngFor="let quote of quotes">
+<div class="container">
+<div class ="row">
+  <div class="col-md-7">
+          <div class="container" *ngFor="let quote of quotes">
+  <blockquote class="quote-card ">
   
   <h4> 
     <a [title]="quote.name + 'quotes'">
@@ -32,10 +36,18 @@
         </a>
         </p>
         <p>Posted on {{today|date}}  {{today|date : 'h:mm a'}}</p>
-        
+  </blockquote>
+          </div> 
+
+           
 </div>
+</div>
+<div class="col-md-5">
 <div class="container">
+
 <app-quote-form></app-quote-form>
+</div>
+</div>
 </div>
 
 <!-- 
