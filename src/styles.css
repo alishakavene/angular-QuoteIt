@@ -117,7 +117,9 @@ app-top-bar {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px, 2px, 2px white;
+ box-shadow: 1px 1px 10px white;
+ position: sticky;
+ top:0;
 }
 
 app-top-bar h1 {
