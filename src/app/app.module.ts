@@ -14,6 +14,7 @@ import { SampleDirective } from './sample.directive';
 
 
 
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -31,7 +32,8 @@ import { SampleDirective } from './sample.directive';
     QuoteFormComponent,
     HighLightDirective,
     UnderlineDirective,
-    SampleDirective
+    SampleDirective,
+   
     
     
   ],
