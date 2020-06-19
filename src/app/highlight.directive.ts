@@ -1,7 +1,7 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
  
 @Directive({
-  selector: '[appHighlight]'
+  selector: '[appHighlighter]'
 })
 export class HighLightDirective {
   constructor(private el: ElementRef) { } 
@@ -9,7 +9,6 @@ export class HighLightDirective {
     this.highlight('purple');
     
   } 
-
   private highlight(color: string) {
     console.log(this.el.nativeElement);
     this.el.nativeElement.style.backgroundColor = color;
