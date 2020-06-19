@@ -6,8 +6,8 @@ import { Directive, HostListener, Renderer2, ElementRef } from '@angular/core';
 export class UnderlineDirective{
 
     constructor(
-        private renderer: Renderer2,
-        private el: ElementRef
+        public renderer: Renderer2,
+        public el: ElementRef
     ){}
   
     @HostListener('mouseenter') Enter() {

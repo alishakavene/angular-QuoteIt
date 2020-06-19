@@ -9,7 +9,7 @@ import { quoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HighLightDirective } from './highlight.directive';
 import { UnderlineDirective } from './underline.directive';
-import { SampleDirective } from './sample.directive';
+import { DirectiveDirective } from './directive.directive';
 
 
 
@@ -32,7 +32,7 @@ import { SampleDirective } from './sample.directive';
     QuoteFormComponent,
     HighLightDirective,
     UnderlineDirective,
-    SampleDirective,
+    DirectiveDirective,
    
     
     
