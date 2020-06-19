@@ -158,3 +158,11 @@ app-top-bar h1 {
   background: linear-gradient(transparent,purple);
   border-radius: 6px;
 }
+.text-center{
+  color: palevioletred;
+}
+.user{
+  color: purple;
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
