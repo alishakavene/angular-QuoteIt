@@ -1,17 +1,27 @@
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Quote</label>
-    <textarea class="form-control" id="quote" placeholder="I am king" rows="4">
-    </textarea>
-    
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Author</label>
-    <input type="text" class="form-control" id="author">
-  </div>
-   <div class="form-group">
-    <label for="exampleInputPassword1">UserName</label>
-    <input type="text" class="form-control" id="username">
-  </div>
-  <button type="button" class="btn btn-danger submit">Post Quote</button>
-</form>
+<div class="container-fluid">
+  <h2 class="text-center">Quote</h2>
+  <hr>
+  
+  <form #quoteForm='ngForm' (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+      <div class="form-group">
+
+          <label for="name">Author</label>
+          <input type="text" class="form-control" id="name" [(ngModel)]="newAuthor.name" name="name" #name='ngModel' required>
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          </div>
+      </div>
+      <div class="form-group">
+
+          <label for="description">Quote</label>
+          <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
+          <div [hidden]="description.valid || description.pristine" class="alert alert-danger"> 
+          </div>
+          <label for="name">Username</label>
+          <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          </div>
+       
+      </div>
+      <button type="submit" class="btn btn-success postquotebtn">Post Quote</button>
+  </form>
+</div>

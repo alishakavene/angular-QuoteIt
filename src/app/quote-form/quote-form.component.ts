@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from'@angular/core';
 
 @Component({
   selector: 'app-quote-form',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
+ 
+ submitQuote () { 
+   
+   alert ('You post has been posted!')
+   
+   }
+
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
-}
+}  
