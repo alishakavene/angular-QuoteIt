@@ -166,3 +166,8 @@ app-top-bar h1 {
   font-size: 13px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+.fab{
+  margin: 30px;
+  font-size: 28px;
+  color: purple;
+}
