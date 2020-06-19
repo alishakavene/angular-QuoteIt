@@ -1,5 +1,4 @@
-
-  <h2></h2>
+<h2></h2>
 <div class="container">
 <div class ="row">
   <div class="col-sm-6">
@@ -14,6 +13,11 @@
     <p *ngIf="quote.description" appHighlighter>
       Quote : {{quote.description}}
       </p> 
+      <h4> 
+    <a [title]="quote.id + 'username'" appHighlighter>
+    {{quote.id}}
+    </a>
+    </h4>
       <p>
         <a [title]="'Like'">
       <button (click)="likeClick()"class="like-button"[ngClass]="{'like':liked}">
@@ -43,18 +47,14 @@
            
 </div>
 </div>
+
 <div class="col-sm-6">
 <div class="form-container">
 
-<app-quote-form></app-quote-form>
+<app-quote-form (quoteBinding)="postTheQuote($event)"></app-quote-form>
 
 </div>
 </div>
 </div>
 
 
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->

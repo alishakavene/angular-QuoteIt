@@ -35,7 +35,21 @@ export class quoteComponent {
   quoteDelete(complete:boolean){
 this.isComplete.emit(complete)
   }
+  submitQuote () { 
+   
+   alert ('You post has been posted!')
+   
+   }
+
+   postTheQuote($event){
+     
+    this.quotes.push($event)
+
+     console.log($event)
+
 }
+}
+
 
 
 
