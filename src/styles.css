@@ -167,7 +167,16 @@ app-top-bar h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .fab{
-  margin: 30px;
+  margin: 20px;
   font-size: 28px;
   color: purple;
+  padding: 10px;
+  display: inline;
+  text-align: center;
+  line-height: 100px;
+
+  
+}
+.fa-twitter{
+  display: inline;
 }
